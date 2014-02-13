@@ -21,6 +21,8 @@ class KDTcore extends GebSpec{
 		Browser.drive {
 			go url
 
+println $("SVG").getAttribute("innerHTML")
+
 			for(int i=2; sheet["A"+i].value != null; i++){
 				switch(sheet["A"+i].value){
 					case INPUT:
